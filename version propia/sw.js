@@ -6,7 +6,6 @@ const APP_SHELL = [
   './',
   './index.html',
   './manifest.json',
-  './manifest.webmanifest',
   './libs/chart.umd.min.js',
   './libs/xlsx.full.min.js',
   './icons/icon-192.png',
