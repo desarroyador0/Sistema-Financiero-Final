@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Flujo Pro icon">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="120" y1="96" x2="392" y2="416" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="416" height="416" rx="96" fill="#0a0e17"/>
+  <rect x="48" y="48" width="416" height="416" rx="96" fill="url(#bg)"/>
+  <circle cx="154" cy="154" r="66" fill="url(#shine)"/>
+  <rect x="132" y="306" width="52" height="94" rx="18" fill="#f8fafc" opacity="0.92"/>
+  <rect x="230" y="254" width="52" height="146" rx="18" fill="#f8fafc" opacity="0.92"/>
+  <rect x="328" y="196" width="52" height="204" rx="18" fill="#f8fafc" opacity="0.92"/>
+  <path d="M126 276 C176 224, 220 230, 264 198 C310 165, 346 152, 388 142" fill="none" stroke="#f8fafc" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="388" cy="142" r="18" fill="#f8fafc"/>
+</svg>
