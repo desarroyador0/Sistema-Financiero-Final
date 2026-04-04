@@ -3364,7 +3364,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Registro optimizado del Service Worker
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js', { scope: './' })
+    navigator.serviceWorker.register('./sw.js', { scope: '/Sistema-Financiero-Final/' })
       .then(registration => {
         console.log('SW registrado con éxito en el alcance:', registration.scope);
       })

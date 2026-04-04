@@ -3,15 +3,15 @@ const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
 const APP_SHELL = [
-  './',
-  './index.html',
-  './manifest.json',
-  './libs/chart.umd.min.js',
-  './libs/xlsx.full.min.js',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/maskable-icon-512.png',
-  './icons/apple-touch-icon.png'
+  '/Sistema-Financiero-Final/',
+  '/Sistema-Financiero-Final/index.html',
+  '/Sistema-Financiero-Final/manifest.json',
+  '/Sistema-Financiero-Final/libs/chart.umd.min.js',
+  '/Sistema-Financiero-Final/libs/xlsx.full.min.js',
+  '/Sistema-Financiero-Final/icons/icon-192.png',
+  '/Sistema-Financiero-Final/icons/icon-512.png',
+  '/Sistema-Financiero-Final/icons/maskable-icon-512.png',
+  '/Sistema-Financiero-Final/icons/apple-touch-icon.png'
 ];
 
 self.addEventListener('install', event => {
