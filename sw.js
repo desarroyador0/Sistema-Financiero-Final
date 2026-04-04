@@ -1,17 +1,22 @@
 const CACHE_VERSION = 'flujo-pro-v4';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
+const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
+
+function inScope(path) {
+  return `${BASE_PATH}${path}`;
+}
 
 const APP_SHELL = [
-  '/Sistema-Financiero-Final/',
-  '/Sistema-Financiero-Final/index.html',
-  '/Sistema-Financiero-Final/manifest.json',
-  '/Sistema-Financiero-Final/libs/chart.umd.min.js',
-  '/Sistema-Financiero-Final/libs/xlsx.full.min.js',
-  '/Sistema-Financiero-Final/icons/icon-192.png',
-  '/Sistema-Financiero-Final/icons/icon-512.png',
-  '/Sistema-Financiero-Final/icons/maskable-icon-512.png',
-  '/Sistema-Financiero-Final/icons/apple-touch-icon.png'
+  inScope('/'),
+  inScope('/index.html'),
+  inScope('/manifest.json'),
+  inScope('/libs/chart.umd.min.js'),
+  inScope('/libs/xlsx.full.min.js'),
+  inScope('/icons/icon-192.png'),
+  inScope('/icons/icon-512.png'),
+  inScope('/icons/maskable-icon-512.png'),
+  inScope('/icons/apple-touch-icon.png')
 ];
 
 self.addEventListener('install', event => {
@@ -57,7 +62,7 @@ async function staleWhileRevalidate(request) {
   }
 
   if (request.mode === 'navigate') {
-    const fallback = await caches.match('./index.html');
+    const fallback = await caches.match(inScope('/index.html'));
     if (fallback) return fallback;
   }
 
@@ -83,7 +88,7 @@ self.addEventListener('fetch', event => {
       } catch (error) {
         const cached = await caches.match(event.request);
         if (cached) return cached;
-        return caches.match('./index.html');
+        return caches.match(inScope('/index.html'));
       }
     })());
     return;
