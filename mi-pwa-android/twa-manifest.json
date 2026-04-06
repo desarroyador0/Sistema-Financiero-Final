@@ -1,0 +1,60 @@
+{
+  "packageId": "io.github.desarroyador0.twa",
+  "host": "desarroyador0.github.io",
+  "name": "(Flujo pro)",
+  "launcherName": "Flujo Pro",
+  "display": "standalone",
+  "themeColor": "#0A0E17",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#0A0E17",
+  "enableNotifications": true,
+  "startUrl": "/Sistema-Financiero-Final/",
+  "iconUrl": "https://desarroyador0.github.io/Sistema-Financiero-Final/icons/icon-512.png",
+  "maskableIconUrl": "https://desarroyador0.github.io/Sistema-Financiero-Final/icons/maskable-icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "C:\\Users\\juanp\\OneDrive\\Documentos\\GitHub\\Sistema-Financiero-Final\\mi-pwa-android\\android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [
+    {
+      "name": "Inicio",
+      "shortName": "Inicio",
+      "url": "https://desarroyador0.github.io/Sistema-Financiero-Final/?shortcut=inicio",
+      "chosenIconUrl": "https://desarroyador0.github.io/Sistema-Financiero-Final/icons/icon-192.png"
+    },
+    {
+      "name": "Perfil",
+      "shortName": "Perfil",
+      "url": "https://desarroyador0.github.io/Sistema-Financiero-Final/?shortcut=perfil",
+      "chosenIconUrl": "https://desarroyador0.github.io/Sistema-Financiero-Final/icons/icon-192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://desarroyador0.github.io/Sistema-Financiero-Final/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://desarroyador0.github.io/Sistema-Financiero-Final/",
+  "minSdkVersion": 21,
+  "orientation": "any",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [],
+  "appVersion": "1"
+}
